@@ -206,39 +206,39 @@
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 col-sm-12">
 						    <p id="ajax_notification"></p>
-							<form action="assets/contact.php" method="post" id="ajax_form">
+							<form action="assets/contact.php" method="post" id="form">
 								<div class="col-md-5 col-sm-6">
 									<div class="form_group">
 										<label>Name</label>
-										<input type="text" name="name">
+										<input name="name" type="text" name="name">
 									</div>
 								</div>
 								<div class="col-md-5 col-md-offset-1 col-sm-6">
 									<div class="form_group">
 										<label>Mail</label>
-										<input type="email" name="email_id">
+										<input name="email" type="email" name="email_id">
 									</div>
 								</div>
 								<div class="col-md-5 col-sm-6">
 									<div class="form_group">
 										<label>Phone</label>
-										<input type="text" name="phone_number">
+										<input name="phone" type="text" name="phone_number">
 									</div>
 								</div>
 								<div class="col-md-5 col-md-offset-1 col-sm-6">
 									<div class="form_group">
 										<label>Website</label>
-										<input type="text" name="website_link" value="http://">
+										<input type="text" name="web" value="http://">
 									</div>
 								</div>
 								<div class="col-md-11 col-sm-12">
 									<div class="form_group">
 										<label>Message</label>
-										<textarea name="main_message"></textarea>
+										<textarea name="msg"></textarea>
 									</div>
 								</div>
 								<div class="form_group_btn">
-								    <input type="hidden" name="ajax_submit">
+								    <input type="hidden" name="submit">
 									<button class="btn_one" type="submit">Send Message</button>
 								</div>
 							</form>

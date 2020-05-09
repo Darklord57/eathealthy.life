@@ -1,12 +1,21 @@
 <?php
+if(isset($_POST['submit'])){
+$name=$_POST['name'];
+$email=$_POST['email'];
+$phone=$_POST['phone'];
+$msg=$_POST['msg'];
+$web=$_POST['web'];
+
 $to = "sharmatarun1019@gmail.com";
 $subject = "Response From Website";
-$message = "Test";
-$headers = "From: contact@eathealthy.life"
+$message = "Name: ".$name."\n"."Phone: ".$phone."\n"."Email: ".$email."\n"."Website".$web."\n"."Message: "."\n\n".$msg;
+$headers = "From: ".$email;
 
-if(mail($to,$subject,$message,$headers)){
-    echo "Mail Sent Successfully";
+if(mail()){
+    echo "<h1>Sent Successfully</h1>";
 } else{
-    echo "Error occured, Try again"
+    echo "Something went wrong";
+}
+
 }
 ?>
